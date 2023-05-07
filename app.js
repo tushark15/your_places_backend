@@ -41,7 +41,7 @@ app.use((error, req, res, next) => {
 
 moongose
   .connect(
-    "mongodb+srv://Tushar:Tushar123@clusters.z1vgrpf.mongodb.net/mern?retryWrites=true&w=majority"
+    `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@clusters.z1vgrpf.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`
   )
   .then(() => {
     app.listen(8888);

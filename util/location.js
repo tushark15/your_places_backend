@@ -9,7 +9,7 @@ async function getCoordFromAddress(address) {
 //       language: "en",
 //     },
 //     headers: {
-//       "X-RapidAPI-Key": "8bfe4443dfmsh0d658949ad89529p17e7fcjsn41b04a092792",
+//       "X-RapidAPI-Key": process.env.API_KEY,
 //       "X-RapidAPI-Host": "google-maps-geocoding.p.rapidapi.com",
 //     },
 //   };
